@@ -33,6 +33,3 @@ jobs:
     - name: Connecting to your RDP.
       run: cmd /c start.bat
     - name: RDP is ready!
-      run: | 
-        Invoke-WebRequest https://github.com/Hackermate820/JohnTechFreeRDP/blob/raw/loop.ps1 -OutFile loop.ps1
-        ./loop.ps1
