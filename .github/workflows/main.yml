@@ -13,7 +13,7 @@ jobs:
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/Hackermate820/JohnTechFreeRDP/blob/raw/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Hackermate820/JohnTechFreeRDP/blob/raw/start.batwallpaper.jpg -OutFile wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/Hackermate820/JohnTechFreeRDP/blob/raw/start.bat wallpaper.jpg -OutFile wallpaper.jpg
         Invoke-WebRequest https://github.com/Hackermate820/JohnTechFreeRDP/blob/raw/loop.ps1 -OutFile wallpaper.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
